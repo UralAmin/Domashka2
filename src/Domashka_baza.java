@@ -41,5 +41,67 @@ public class Domashka_baza {
             System.out.println("Приготовили овощной");
         } else System.out.println("У меня ничего нет");
 
+
+
+
+        //Обьявил новый объект Car1
+        Car car1 = new Car("Volkswagen", 160000, 2008);
+
+        String marka = car1.getMarka();
+        int probeg = car1.getProbeg();
+        int god = car1.getGod();
+        System.out.println("марка: "+marka+". Пробег: "+probeg+". Год: "+god);
+
+
+        //сеттер и геттер для марки авто
+        car1.SetMarka("Toyota");
+        marka = car1.getMarka();
+        System.out.println(marka);
+
+        //сеттер и геттер для пробега
+        car1.setProbeg(165000);
+        probeg = car1.getProbeg();
+        System.out.println(probeg);
+
+
+        //сеттер и геттер для года авто
+        car1.setGod(2009);
+        god = car1.getGod();
+        System.out.println(god);
+
+
+        //Обьявил новый обьект Car2
+        Car car2 = new Car("Audi", 34000, 2012);
+        System.out.println("марка: "+marka+". Пробег: "+probeg+". Год: "+god);
+        car2.SetMarka("Mazda");
+        marka = car2.getMarka();
+        System.out.println(marka);
+
+        probeg = car2.getProbeg();
+        System.out.println(probeg);
+
+        System.out.println(Car.count);
+
+
+        //Обьявил новый обьект kv
+        kvartira kv = new kvartira("Ufa", "Lenina", 10);
+
+        String gorod = kv.getGorod();
+        String street = kv.getStreet();
+        int dom = kv.getDom();
+
+        System.out.println("Город: "+ gorod +". Улица: "+ street +". Дом: "+ dom);
+
+        kv.setGorod("Moscow");
+        gorod = kv.getGorod();
+        System.out.println(gorod);
+
+        kv.setStreet("Marksa");
+        street = kv.getStreet();
+        System.out.println(street);
+
+        System.out.println(kv.count);
+
+
     }
 }
